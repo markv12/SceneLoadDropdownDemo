@@ -1,5 +1,6 @@
 ﻿public enum Scenes
 {
+    SplashScene,
     TitleScene,
     GameScene1,
     GameScene2,
@@ -13,6 +14,8 @@ public static class ScenesExtensions
     {
         switch (scene)
         {
+            case Scenes.SplashScene:
+                return "SplashScene";
             case Scenes.TitleScene:
                 return "TitleScene";
             case Scenes.GameScene1:

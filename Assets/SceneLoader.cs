@@ -2,8 +2,15 @@
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
-public class SceneLoader
+public static class SceneLoader
 {
+    // % = ctrl/cmd
+    // # = shift
+    // & = alt
+    //Example:
+    [MenuItem("Scenes/Load SplashScene %1")] // ctrl/cmd + 1
+    public static void LoadSplashScene() { openScene(Scenes.SplashScene); }
+
     [MenuItem("Scenes/Load TitleScene")]
     public static void LoadTitleScene() { openScene(Scenes.TitleScene); }
 
